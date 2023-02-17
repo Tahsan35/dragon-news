@@ -51,15 +51,13 @@ const Header = () => {
                             }
                         </Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">
-                            {
-                                user?.photoURL ?
-                                    <Image
-                                        style={{ height: '30px' }}
-                                        roundedCircle
-                                        src={user?.photoURL}>
-                                    </Image>
-                                    : <FaUser></FaUser>
-
+                            {user?.photoURL ?
+                                <Image
+                                    style={{ height: '30px' }}
+                                    roundedCircle
+                                    src={user?.photoURL}>
+                                </Image>
+                                : <FaUser></FaUser>
                             }
                         </Nav.Link>
                     </Nav>

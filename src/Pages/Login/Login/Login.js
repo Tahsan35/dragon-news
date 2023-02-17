@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { Button } from 'react-bootstrap';
-import { Form, useNavigate } from 'react-router-dom';
+import { Button, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 
 const Login = () => {
@@ -21,6 +21,7 @@ const Login = () => {
             })
             .catch(error => console.error(error))
     }
+
     return (
         <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
